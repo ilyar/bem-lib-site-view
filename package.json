@@ -8,7 +8,7 @@
     "url": "git://github.com/bem-site/bem-lib-site-view.git"
   },
   "scripts": {
-    "postinstall": "bower install",
+    "postinstall": "bower install && enb make",
     "prepublish": "enb make",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,12 +17,6 @@
   "bin": {
     "bem-lib-site-view": "./bin/bem-lib-site-view"
   },
-  "files": [
-    "bin",
-    "desktop.bundles/**",
-    "lib",
-    "index.js"
-  ],
   "dependencies": {
     "bem-config": "^3.0.0",
     "bem-naming": "^1.0.1",
